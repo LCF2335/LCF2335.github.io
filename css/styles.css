@@ -128,6 +128,15 @@ nav ul li a {
     display: block;
 }
 
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
 #centered-text {
     position: absolute;
     top: 36%;
@@ -148,7 +157,7 @@ nav ul li a {
 
 #bottom-text {
     position: absolute;
-    bottom: 35px;
+    bottom: 43px;
     left: 50%;
     transform: translateX(-50%);
     color: wheat;
@@ -191,6 +200,7 @@ nav ul li a {
     transform: translateY(0);
 }
 
+/* footer */
 
 footer {
     color: #fff;
