@@ -62,7 +62,7 @@
     padding-top: 8%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 8%;
+    padding-bottom: 3%;
 }
 
 #story_contain {
@@ -80,7 +80,13 @@
     border-bottom: 1px solid #ffa853;
     display: inline;
     padding-bottom: 15px;
+    transform: translateY(25px);
+    transition: opacity 2s, transform 1s;
+}
 
+.underline.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .underline h3 {
@@ -116,7 +122,6 @@ p {
     color: white;
     text-align: center;
     align-items: center;
-    padding-bottom: 35px;
 }
 
 .grid-container {
@@ -196,6 +201,7 @@ p {
 
 .guarantee_item:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 #icon_contain {
@@ -246,4 +252,5 @@ p {
 
 .icon-item:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
