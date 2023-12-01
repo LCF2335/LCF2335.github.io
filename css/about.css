@@ -224,12 +224,13 @@ p {
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
 .icon-item h3 {
     margin: 0;
+    color: wheat;
+    padding-bottom: 10px;
 }
 
 .icon-item p {
