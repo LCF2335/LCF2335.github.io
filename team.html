@@ -8,11 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/specials.css">
+    <link rel="stylesheet" href="css/team.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Our Team</title>
+    <title>About Us</title>
     <link rel="icon" href="images/logo1.png">
 
 </head>
@@ -34,6 +34,122 @@
         </ul>
     </nav>
 
+    <main>
+        <div id="hero_container">
+            <img id="image" src="images/team_hero.jpeg" alt="Team Hero">
+            <div class="gradient-overlay"></div>
+            <div id="hero-text">
+                <h1>Meet Our Team</h1>
+            </div>
+            <div id="hero-text_b">
+                <p>Introducing our passionate team of fire enthusiasts. We take pride in our group of empowered leaders
+                    who are ever prepared to confront new challenges.</p>
+            </div>
+        </div>
+
+        <aside>
+            <div id="history">
+                <div id="history_contain">
+                    <div class="histoty_container">
+                        <div class="history_item">
+                            <span class="underline">
+                                <h2>Who We Are</h2>
+                            </span>
+                            <p>Welcome to Flame Fusion, where a team of passionate individuals comes together to
+                                redefine outdoor experiences. Our dedicated crew, comprised of seasoned artisans,
+                                engineers, and outdoor enthusiasts, shares a common vision: to elevate your gatherings
+                                around the fire pit into unforgettable moments. Leading the way is Jonas Kahnwald, a
+                                visionary with a deep appreciation for craftsmanship and a commitment to creating spaces
+                                that foster connection.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+
+        <article>
+            <div id="team-container">
+                <div id="team-contain">
+                </div>
+                <div class="team-grid">
+                    <figure>
+                        <img src="images/johnas.jpg" alt="Executive Team Member 1">
+                        <figcaption>
+                            <h3>Jonas Kahnwald</h3>
+                            <p>Founder</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/emma.jpg" alt="Executive Team Member 2">
+                        <figcaption>
+                            <h3>Martha Nielsen</h3>
+                            <p>Founder</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Erren.jpg" alt="Marketing Team Member 1">
+                        <figcaption>
+                            <h3>Erren Yeager</h3>
+                            <p>Sales Coordinator</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/raashi.jpg" alt="Marketing Team Member 2">
+                        <figcaption>
+                            <h3>Emma Stone</h3>
+                            <p>Office Manager</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/erwin.jpg" alt="Sales Team Member 1">
+                        <figcaption>
+                            <h3>Erwin Smith</h3>
+                            <p>Business Development</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Yuzin.jpg" alt="Sales Team Member 2">
+                        <figcaption>
+                            <h3>Yuzin Light</h3>
+                            <p>Marketing Manager</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                </section>
+        </article>
+
+
+        <aside>
+            <div id="history">
+                <div id="history_contain">
+                    <div class="histoty_container">
+                        <div class="history_item">
+                            <span class="underline">
+                                <h2>Our Histoy</h2>
+                            </span>
+                            <p>Founded in 2015, our company has a rich history of innovation and success. From our
+                                humble beginnings to becoming a leader in the industry, we take pride in our journey. We
+                                are committed to excellence and look forward to shaping the future together. Our
+                                dedicated team of professionals is driven by a passion for what we do. With a focus on
+                                creativity, collaboration, and cutting-edge solutions, we continue to push boundaries
+                                and set new standards in our field.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+
+
+    </main>
 
     <footer>
         <div class="left">
@@ -47,6 +163,22 @@
         </div>
     </footer>
 
+    <script>
+        const container = document.getElementById('fadeContainer');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    container.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(container);
+    </script>
+
 </body>
+
 
 </html>

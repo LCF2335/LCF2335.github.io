@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/specials.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
             <a href="index.html"><img class="logo" src="images/flamefusion.png" alt="Flame Fusion"></a>
         </div>
         <ul class="nav-container">
-            <li><a href="index.html" class="nav-link" id="active">Home</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="team.html" class="nav-link">Our Team</a></li>
             <li><a href="specials.html" class="nav-link">Specials</a></li>
@@ -34,6 +34,73 @@
         </ul>
     </nav>
 
+    <main>
+        <div id="hero_container">
+            <img id="image" src="images/contact.jpg" alt="About Hero">
+            <div class="gradient-overlay"></div>
+            <div id="hero-text">
+                <h1>Contact us today!</h1>
+            </div>
+            <div id="hero-text_b">
+                <p>Seeking suggestions? Have inquiries? Looking to engage in a conversation? Reach out to us, and let's
+                    collaborate on something fantastic! Our customer success team is prompt in responding during
+                    business hours.</p>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div id="contact_contain">
+                <span class="underline">
+                    <h1>Contact Us</h1>
+                </span>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend></legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea>
+
+                    <div class="gender-options">
+                        <div class="gender-label">
+                            <label for="male">Male:</label>
+                            <input type="radio" id="male" name="gender" value="male">
+                        </div>
+                        <div class="gender-label">
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                        </div>
+                    </div>
+
+                    <div class="newslat">
+                        <label for="subscribe">Subscribe to newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" checked>
+                    </div>
+
+
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="sales">Sales</option>
+                        <option value="support">Support</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+
+                    <div id="submit">
+                        <button type="submit">Submit Request</button>
+                        <button type="reset">Reset Form</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div class="left">

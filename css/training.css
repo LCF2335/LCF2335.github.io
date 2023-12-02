@@ -1,0 +1,120 @@
+#hero_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+#image {
+    object-fit: fill;
+    width: 100%;
+    height: 70vh;
+    display: block;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+#hero-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#hero-text h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#hero-text_b {
+    position: absolute;
+    bottom: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+#hero-text_b p {
+    font-size: 17px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+#training {
+    width: auto;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 6%;
+}
+
+#training_contain {
+    color: #1c1c1c;
+    text-align: center;
+}
+
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ffa853;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.training-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    background-color: #1c1c1c;
+}
+
+.training-table th,
+.training-table td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.training-table th {
+    background-color: #333;
+    color: wheat;
+}
+
+.training-table tbody {
+    background-color: #292929;
+    color: #fff;
+}
+
+.training-table tbody tr:nth-child(even) {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.training-table tbody tr:hover {
+    background-color: #ffa853;
+    cursor: pointer;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
