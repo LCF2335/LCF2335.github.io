@@ -141,7 +141,6 @@ button:hover {
 .gender-label {
     display: flex;
     align-items: center;
-    /* Center the content vertically */
 }
 
 .gender-label input {
@@ -157,4 +156,39 @@ button:hover {
     width: auto;
     margin-left: 15px;
     margin-top: 4px;
+}
+
+#submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+}
+
+button:first-child {
+    margin-right: 10px;
+}
+
+.underline h2 {
+    border-bottom: 1px solid #ffa853;
+    display: inline;
+}
+
+.underline p {
+    border-bottom: 1px solid #ffa853;
+    display: inline;
+}
+
+iframe {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+address {
+    margin-top: 1%;
 }
