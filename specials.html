@@ -56,10 +56,10 @@
                     </span>
                     <div id="info">
                         <span class="underline">
-                            <h2>Modern Cube Fire Pit</h2>
+                            <h2>Tetrahedral Fire Fixture</h2>
                         </span>
-                        <p>The Modern Cube fire pit's square configuration invites users to gather around, thanks
-                            to its elevated bowl, towering sides, and a compact footprint.</p>
+                        <p>The Tetrahedral Fire Fixture pit's square configuration invites users to gather around,
+                            thanks to its elevated bowl, towering sides, and a compact footprint.</p>
                         <div id="star">
                             <h1>★★★★</h1>
                         </div>
@@ -71,6 +71,65 @@
             </div>
         </div>
 
+        <div id="sales-container">
+            <div id="sales_contain">
+                <div class="container" id="fadeContainer">
+                    <span class="underline">
+                        <h1>Weekly Sales</h1>
+                    </span>
+                </div>
+                <div class="sales-container">
+                    <div class="sale-item">
+                        <img src="images/cupola_fire_ring.jpg" alt="Product 1">
+                        <div class="sale-details">
+                            <div class="sale-title">Cupola Fire Pit</div>
+                            <div class="sale-price">$469.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Sale Item 2 -->
+                    <div class="sale-item">
+                        <img src="images/modern_cube_fire_pit.jpg" alt="Product 2">
+                        <div class="sale-details">
+                            <div class="sale-title">Sleek Cube-shaped Fire Pit</div>
+                            <div class="sale-price">$579.99</div>
+                        </div>
+                    </div>
+
+                    <div class="sale-item">
+                        <img src="images/octagonal_cottager_fire_pit.jpg" alt="Product 3">
+                        <div class="sale-details">
+                            <div class="sale-title">Octagonal Retreat Fire Pit</div>
+                            <div class="sale-price">$829.99</div>
+                        </div>
+                    </div>
+
+                    <div class="sale-item">
+                        <img src="images/polygon_fire_bowl.jpg" alt="Product 4">
+                        <div class="sale-details">
+                            <div class="sale-title">Polygonal Fire Bowl</div>
+                            <div class="sale-price">$769.99</div>
+                        </div>
+                    </div>
+
+                    <div class="sale-item">
+                        <img src="images/pyramid_fireplace.jpg" alt="Product 5">
+                        <div class="sale-details">
+                            <div class="sale-title">Tetrahedral Fire Fixture</div>
+                            <div class="sale-price">$1199.99</div>
+                        </div>
+                    </div>
+
+                    <div class="sale-item">
+                        <img src="images/chminea_fireplace.jpg" alt="Product 6">
+                        <div class="sale-details">
+                            <div class="sale-title">Fireplace Chiminea</div>
+                            <div class="sale-price">$999.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -85,6 +144,19 @@
             <a href="mailto:flamefusion@ca.net"> flamefusion@ca.net </a></p>
         </div>
     </footer>
+    <script>
+        const container = document.getElementById('fadeContainer');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    container.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        observer.observe(container);
+    </script>
 
 </body>
 
