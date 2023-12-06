@@ -8,7 +8,7 @@
 #image {
     object-fit: fill;
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: block;
 }
 
@@ -311,4 +311,43 @@ p {
     height: 100%;
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+@media (max-width: 768px) {
+    #about-text h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #about-text_b p {
+        font-size: 5px;
+    }
+
+    #our_story {
+        font-size: 10px;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px auto;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .underline h1 {
+        padding-bottom: 0px;
+    }
+
+    .container h1 {
+        color: white;
+        font-size: 29px;
+    }
 }
