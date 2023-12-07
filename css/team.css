@@ -191,3 +191,16 @@ figcaption p {
 .underline h2 {
     border-bottom: 1px solid #ffa853;
 }
+
+@media (max-width: 768px) {
+    #hero-text_b {
+        display: none;
+    }
+
+    .team-grid {
+        display: flex;
+        gap: 30px;
+        flex-direction: column
+    }
+
+}

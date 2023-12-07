@@ -89,3 +89,13 @@ audio {
 video {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    #hero-text_b p {
+        display: none;
+    }
+
+    .underline h1 {
+        font-size: 18px;
+    }
+}

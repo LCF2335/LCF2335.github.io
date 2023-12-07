@@ -96,3 +96,10 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+    #hero-text_b p {
+        display: none;
+    }
+
+}

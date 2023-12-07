@@ -118,3 +118,10 @@
     max-height: 100px;
     margin-right: 10px;
 }
+
+
+@media (max-width: 768px) {
+    .training-table {
+        font-size: 7px;
+    }
+}

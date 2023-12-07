@@ -284,7 +284,7 @@ p {
 
 .testimonial {
     position: absolute;
-    top: 30%;
+    top: 15%;
     right: 30px;
     color: white;
     font-style: italic;
@@ -318,7 +318,7 @@ p {
     }
 
     #about-text_b p {
-        font-size: 5px;
+        display: none;
     }
 
     #our_story {
@@ -346,7 +346,7 @@ p {
 
     .container h1 {
         color: white;
-        font-size: 2px;
+        font-size: 27px;
     }
 
     .testimonial {

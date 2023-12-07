@@ -192,3 +192,22 @@ iframe {
 address {
     margin-top: 1%;
 }
+
+@media (max-width: 768px) {
+    #hero-text_b p {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #contact {
+        width: auto;
+    }
+
+    form {
+        width: auto;
+    }
+
+}
