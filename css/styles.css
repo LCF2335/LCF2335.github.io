@@ -248,6 +248,8 @@ footer {
     margin: 6px 0;
 }
 
+
+
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
